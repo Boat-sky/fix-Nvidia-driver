@@ -1,5 +1,5 @@
 # fix-Nvidia-driver
-1. เปิดหน้า Gui แล้วเลือกเวอร์ชั่น driver ที่แนะนำ
+1. เปิดหน้า Gui แล้วเลือกเวอร์ชั่น driver ที่แนะนำ (กรณีเป็น 435)
 2. หาทำข้อ 1. ไม่ได้ อาจจะเพราะว่ามีบางอย่งที่ค้างอยู่ ลอง   
 ```
 LC_MESSAGES=C dpkg-divert --list '*nvidia-340*' | sed -nre 's/^diversion of (.*) to .*/\1/p' | xargs -rd'\n' -n1 -- sudo dpkg-divert --remove
