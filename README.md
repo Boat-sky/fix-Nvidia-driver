@@ -16,4 +16,5 @@ sudo apt-get install nvidia-driver-435
 Reboot
 ```
 4. หากมีการแจ้งเตอนว่า Possible missing firemware ลอง เข้าลิงค์นี้ http://anduin.linuxfromscratch.org/sources/linux-firmware/i915/ และโหลดตัวที่ขาด แล้ว coppy มาวางมที่ /lib/firmware/i915/
-แล้วสั่ง `sudo apt-get update -y`
+แล้วสั่ง `sudo apt-get update -y`   
+ดูเพิ่มเติมได้ที่ https://unix.stackexchange.com/questions/556946/possible-missing-firmware-lib-firmware-i915-for-module-i915/556947#556947
