@@ -35,3 +35,12 @@ sudo ubuntu-drivers autoinstall
 sudo reboot
 ```
 ข้อ 5-7 สามารถดูเพิ่มเติมได้ที่ https://forums.developer.nvidia.com/t/newly-installed-drivers-are-not-found-when-nvidia-smi-is-called/82686
+8. ถ้าไม่ได้อาจต้องลบติดตั้งใหม่
+```
+sudo apt-add-repository -r ppa:graphics-drivers/ppa
+sudo apt update
+sudo apt remove nvidia*
+sudo apt autoremove
+sudo ubuntu-drivers autoinstall
+```
+9. ไปที่ Update Manager แล้วทำการอัปเดตให้เป็นปัจจุบัน แล้วทำข้อ 3-7 ใหม่อีกครั้ง
