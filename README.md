@@ -6,7 +6,7 @@ LC_MESSAGES=C dpkg-divert --list '*nvidia-340*' | sed -nre 's/^diversion of (.*)
 sudo apt --fix-broken install
 ```
 ดูเพิ่มเติมได้ที่ https://askubuntu.com/questions/1035409/installing-nvidia-drivers-on-18-04   
-3.  ลอง
+3. ถ้ทำข้อ 1 ได้ต่อไป
 ```
 sudo apt-get purge nvidia*
 Reboot
